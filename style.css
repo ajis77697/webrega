@@ -1,347 +1,136 @@
 *{
-
-margin:0;
-padding:0;
 box-sizing:border-box;
-
 }
-
 
 
 body{
 
+margin:0;
+padding:20px;
+
+font-family:Poppins,sans-serif;
+
+background:linear-gradient(
+135deg,
+#ffd6e8,
+#fff
+);
 
 min-height:100vh;
 
-
-background:
-
-linear-gradient(
-135deg,
-#fff5fa,
-#ffd6e8,
-#ffffff
-);
-
-
-font-family:'Poppins',sans-serif;
-
-
 display:flex;
-
 justify-content:center;
-
 align-items:center;
 
-
-overflow:auto;
-
-
 }
 
 
-
-
-.opening{
-
-
-position:fixed;
-
-
-width:100%;
-
-
-height:100vh;
-
-
-background:
-
-linear-gradient(
-135deg,
-#fff5fa,
-#ffd6e8
-);
-
-
-display:flex;
-
-
-flex-direction:column;
-
-
-justify-content:center;
-
-
-align-items:center;
-
-
-z-index:10;
-
-
-}
-
-
-
-.envelope{
-
-
-font-size:100px;
-
-
-animation:
-
-floating 2s infinite alternate;
-
-
-}
-
-
-
-
-.opening h1,
-
-
-.container h1{
-
-
-font-family:'Great Vibes',cursive;
-
-
-color:#ff7bac;
-
-
-font-size:65px;
-
-
-}
-
-
-
-
-button{
-
-
-padding:13px 30px;
-
-
-margin:10px;
-
-
-border:none;
-
-
-border-radius:30px;
-
-
-background:
-
-linear-gradient(
-45deg,
-#ff9fc7,
-#ff6fa8
-);
-
-
-color:white;
-
-
-cursor:pointer;
-
-
-font-size:15px;
-
-
-}
-
-
-
-button:hover{
-
-
-transform:scale(1.1);
-
-
-}
-
-
-
-.container{
-
-
-display:none;
-
-
-width:90%;
-
-
-max-width:500px;
-
+.card{
 
 background:white;
 
+width:90%;
+max-width:600px;
 
-padding:35px;
+padding:30px;
 
-
-border-radius:35px;
-
+border-radius:30px;
 
 text-align:center;
 
-
-box-shadow:
-
-0 15px 40px rgba(255,105,160,.25);
-
+box-shadow:0 10px 30px rgba(255,105,180,.2);
 
 }
-
-
-
-.heart{
-
-
-font-size:60px;
-
-
-animation:
-
-floating 2s infinite alternate;
-
-
-}
-
-
-
-@keyframes floating{
-
-
-from{
-
-transform:translateY(0);
-
-}
-
-
-to{
-
-transform:translateY(-15px);
-
-}
-
-
-}
-
 
 
 .foto{
 
+width:100%;
 
-width:230px;
+max-width:350px;
 
+height:auto;
 
-height:230px;
+border-radius:20px;
 
-
-object-fit:cover;
-
-
-border-radius:50%;
-
-
-border:8px solid white;
-
-
-box-shadow:0 0 25px pink;
-
-
-margin:20px;
-
+margin-bottom:20px;
 
 }
 
+
+h1{
+
+font-family:"Great Vibes";
+
+font-size:70px;
+
+color:#ff69a6;
+
+margin:10px;
+
+}
 
 
 h2{
 
-
-color:#ff6fa8;
-
+color:#ff5f9e;
 
 }
-
 
 
 p{
 
+font-size:16px;
 
-color:#777;
+line-height:1.8;
 
+color:#666;
 
-line-height:1.9;
-
-
-font-size:15px;
-
+text-align:center;
 
 }
 
 
+.love{
 
-#pesan{
+font-size:25px;
 
+color:#ff69a6;
 
-margin-top:20px;
-
-
-color:#ff6fa8;
-
-
-font-size:20px;
-
+margin:30px;
 
 }
 
 
+audio{
 
-body::before{
-
-
-content:"💗 🤍 💕 ♡ 💗";
-
-
-position:fixed;
-
-
-top:-50px;
-
-
-font-size:35px;
-
-
-opacity:.5;
-
-
-animation:jatuh 10s infinite linear;
-
+width:100%;
 
 }
 
 
+@media(max-width:600px){
 
-@keyframes jatuh{
 
+.card{
 
-from{
+padding:20px;
 
-transform:translateY(-100px);
+width:95%;
 
 }
 
 
-to{
+h1{
 
-transform:translateY(110vh);
+font-size:45px;
+
+}
+
+
+p{
+
+font-size:14px;
 
 }
 
